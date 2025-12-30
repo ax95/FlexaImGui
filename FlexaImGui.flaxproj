@@ -1,0 +1,14 @@
+{
+	"Name": "FlexaImGui",
+	"Version": "1.0",
+	"Company": "",
+	"Copyright": "",
+	"GameTarget": "FlexaImGuiTarget",
+	"EditorTarget": "FlexaImGuiEditorTarget",
+	"References": [
+		{
+			"Name": "$(EnginePath)/Flax.flaxproj"
+		}
+	],
+	"MinEngineVersion": "0.0.6167"
+}

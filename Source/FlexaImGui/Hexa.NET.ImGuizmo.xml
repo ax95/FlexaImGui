@@ -1,0 +1,2504 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hexa.NET.ImGuizmo</name>
+    </assembly>
+    <members>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetDrawlistNative(Hexa.NET.ImGui.ImDrawList*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetDrawlist(Hexa.NET.ImGui.ImDrawListPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetDrawlist">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetDrawlist(Hexa.NET.ImGui.ImDrawList@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.BeginFrameNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.BeginFrame">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetImGuiContextNative(Hexa.NET.ImGui.ImGuiContext*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetImGuiContext(Hexa.NET.ImGui.ImGuiContextPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetImGuiContext(Hexa.NET.ImGui.ImGuiContext@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsOverNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsOver">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsUsingNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsUsing">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsUsingViewManipulateNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsUsingViewManipulate">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsViewManipulateHoveredNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsViewManipulateHovered">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsUsingAnyNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsUsingAny">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.EnableNative(System.Byte)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Enable(System.Boolean)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponentsNative(System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DecomposeMatrixToComponents(System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponentsNative(System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.RecomposeMatrixFromComponents(System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetRectNative(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetRect(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetOrthographicNative(System.Byte)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetOrthographic(System.Boolean)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawCubesNative(System.Single*,System.Single*,System.Single*,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawCubes(System.Single*,System.Single*,System.Single*,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawCubes(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4[],System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawCubes(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawCubes(System.Single@,System.Single*,System.Single*,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawCubes(System.Single*,System.Single@,System.Single*,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawCubes(System.Single@,System.Single@,System.Single*,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawCubes(System.Single*,System.Single*,System.Single@,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawCubes(System.Single@,System.Single*,System.Single@,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawCubes(System.Single*,System.Single@,System.Single@,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawCubes(System.Single@,System.Single@,System.Single@,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawGridNative(System.Single*,System.Single*,System.Single*,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawGrid(System.Single*,System.Single*,System.Single*,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawGrid(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawGrid(System.Single@,System.Single*,System.Single*,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawGrid(System.Single*,System.Single@,System.Single*,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawGrid(System.Single@,System.Single@,System.Single*,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawGrid(System.Single*,System.Single*,System.Single@,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawGrid(System.Single@,System.Single*,System.Single@,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawGrid(System.Single*,System.Single@,System.Single@,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DrawGrid(System.Single@,System.Single@,System.Single@,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ManipulateNative(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Numerics.Matrix4x4@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Numerics.Matrix4x4@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Numerics.Matrix4x4@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Numerics.Matrix4x4@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single*,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single@,System.Single*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single*,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single*,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single*,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Manipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulateNative(System.Single*,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulate(System.Single*,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulate(System.Numerics.Matrix4x4@,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulate(System.Single@,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulateNative(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulate(System.Numerics.Matrix4x4@,System.Numerics.Matrix4x4@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Numerics.Matrix4x4@,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single*,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulate(System.Single*,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulate(System.Single@,System.Single*,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulate(System.Single*,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.ViewManipulate(System.Single@,System.Single@,Hexa.NET.ImGuizmo.ImGuizmoOperation,Hexa.NET.ImGuizmo.ImGuizmoMode,System.Single@,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetAlternativeWindowNative(Hexa.NET.ImGui.ImGuiWindow*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetAlternativeWindow(Hexa.NET.ImGui.ImGuiWindowPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetAlternativeWindow(Hexa.NET.ImGui.ImGuiWindow@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetIDNative(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetID(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushIDNative(System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushIDNative(System.Byte*,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.Byte*,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.Byte@,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.ReadOnlySpan{System.Byte},System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.String,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.Byte*,System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.Byte*,System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.Byte*,System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.Byte@,System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.String,System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.Byte@,System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.Byte@,System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.ReadOnlySpan{System.Byte},System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.ReadOnlySpan{System.Byte},System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.String,System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.String,System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushIDNative(System.Void*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.Void*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushIDNative(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PushID(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PopIDNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.PopID">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetIDNative(System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetIDNative(System.Byte*,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.Byte*,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.Byte@,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.ReadOnlySpan{System.Byte},System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.String,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.Byte*,System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.Byte*,System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.Byte*,System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.Byte@,System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.String,System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.Byte@,System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.Byte@,System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.ReadOnlySpan{System.Byte},System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.ReadOnlySpan{System.Byte},System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.String,System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.String,System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetIDNative(System.Void*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetID(System.Void*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsOverNative(Hexa.NET.ImGuizmo.ImGuizmoOperation)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsOver(Hexa.NET.ImGuizmo.ImGuizmoOperation)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetGizmoSizeClipSpaceNative(System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetGizmoSizeClipSpace(System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.AllowAxisFlipNative(System.Byte)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.AllowAxisFlip(System.Boolean)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetAxisLimitNative(System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetAxisLimit(System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetAxisMaskNative(System.Byte,System.Byte,System.Byte)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetAxisMask(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetPlaneLimitNative(System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.SetPlaneLimit(System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsOverNative(System.Single*,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsOver(System.Single*,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.IsOver(System.Single@,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.StyleNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Style">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.DestroyNative(Hexa.NET.ImGuizmo.Style*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Destroy(Hexa.NET.ImGuizmo.StylePtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.Destroy(Hexa.NET.ImGuizmo.Style@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetStyleNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.GetStyle">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.ImGuizmo.InitApi(HexaGen.Runtime.INativeContext)">
+            <summary>
+            Initializes the function table, automatically called. Do not call manually, only after <see cref="M:Hexa.NET.ImGuizmo.ImGuizmo.FreeApi"/>.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImGuizmo.ImGuizmoColor">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.DirectionX">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.DirectionY">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.DirectionZ">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.PlaneX">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.PlaneY">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.PlaneZ">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.Selection">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.Inactive">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.TranslationLine">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.ScaleLine">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.RotationUsingBorder">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.RotationUsingFill">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.HatchedAxisLines">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.Text">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.TextShadow">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoColor.Count">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImGuizmo.ImGuizmoMode">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoMode.Local">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoMode.World">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImGuizmo.ImGuizmoOperation">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.TranslateX">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.TranslateY">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.TranslateZ">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.RotateX">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.RotateY">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.RotateZ">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.RotateScreen">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.ScaleX">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.ScaleY">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.ScaleZ">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.Bounds">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.ScaleXu">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.ScaleYu">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.ScaleZu">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.Translate">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.Rotate">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.Scale">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.Scaleu">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.ImGuizmoOperation.Universal">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImGuizmo.Style">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.Style.TranslationLineThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.Style.TranslationLineArrowSize">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.Style.RotationLineThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.Style.RotationOuterLineThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.Style.ScaleLineThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.Style.ScaleLineCircleSize">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.Style.HatchedAxisLineThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.Style.CenterCircleSize">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGuizmo.Style.Colors_0">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.Style.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Numerics.Vector4*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.Style.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Span{System.Numerics.Vector4})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGuizmo.Style.Colors">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.Style.Destroy">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImGuizmo.StylePtr">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.StylePtr.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.StylePtr.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="P:Hexa.NET.ImGuizmo.StylePtr.TranslationLineThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGuizmo.StylePtr.TranslationLineArrowSize">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGuizmo.StylePtr.RotationLineThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGuizmo.StylePtr.RotationOuterLineThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGuizmo.StylePtr.ScaleLineThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGuizmo.StylePtr.ScaleLineCircleSize">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGuizmo.StylePtr.HatchedAxisLineThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGuizmo.StylePtr.CenterCircleSize">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGuizmo.StylePtr.Colors">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGuizmo.StylePtr.Destroy">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+    </members>
+</doc>

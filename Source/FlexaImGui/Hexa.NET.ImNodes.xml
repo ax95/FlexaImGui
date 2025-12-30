@@ -1,0 +1,2498 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hexa.NET.ImNodes</name>
+    </assembly>
+    <members>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EmulateThreeButtonMouseNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EmulateThreeButtonMouse">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.DestroyNative(Hexa.NET.ImNodes.EmulateThreeButtonMouse*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.Destroy(Hexa.NET.ImNodes.EmulateThreeButtonMousePtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.Destroy(Hexa.NET.ImNodes.EmulateThreeButtonMouse@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LinkDetachWithModifierClickNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LinkDetachWithModifierClick">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.DestroyNative(Hexa.NET.ImNodes.LinkDetachWithModifierClick*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.Destroy(Hexa.NET.ImNodes.LinkDetachWithModifierClickPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.Destroy(Hexa.NET.ImNodes.LinkDetachWithModifierClick@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MultipleSelectModifierNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MultipleSelectModifier">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.DestroyNative(Hexa.NET.ImNodes.MultipleSelectModifier*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.Destroy(Hexa.NET.ImNodes.MultipleSelectModifierPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.Destroy(Hexa.NET.ImNodes.MultipleSelectModifier@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.ImNodesIONative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.ImNodesIO">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.DestroyNative(Hexa.NET.ImNodes.ImNodesIO*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.Destroy(Hexa.NET.ImNodes.ImNodesIOPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.Destroy(Hexa.NET.ImNodes.ImNodesIO@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.ImNodesStyleNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.ImNodesStyle">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.DestroyNative(Hexa.NET.ImNodes.ImNodesStyle*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.Destroy(Hexa.NET.ImNodes.ImNodesStylePtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.Destroy(Hexa.NET.ImNodes.ImNodesStyle@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetImGuiContextNative(Hexa.NET.ImGui.ImGuiContext*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetImGuiContext(Hexa.NET.ImGui.ImGuiContextPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetImGuiContext(Hexa.NET.ImGui.ImGuiContext@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.CreateContextNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.CreateContext">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.DestroyContextNative(Hexa.NET.ImNodes.ImNodesContext*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.DestroyContext(Hexa.NET.ImNodes.ImNodesContextPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.DestroyContext">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.DestroyContext(Hexa.NET.ImNodes.ImNodesContext@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetCurrentContextNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetCurrentContext">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetCurrentContextNative(Hexa.NET.ImNodes.ImNodesContext*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetCurrentContext(Hexa.NET.ImNodes.ImNodesContextPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetCurrentContext(Hexa.NET.ImNodes.ImNodesContext@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextCreateNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextCreate">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextFreeNative(Hexa.NET.ImNodes.ImNodesEditorContext*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextFree(Hexa.NET.ImNodes.ImNodesEditorContextPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextFree(Hexa.NET.ImNodes.ImNodesEditorContext@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextSetNative(Hexa.NET.ImNodes.ImNodesEditorContext*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextSet(Hexa.NET.ImNodes.ImNodesEditorContextPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextSet(Hexa.NET.ImNodes.ImNodesEditorContext@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextGetPanningNative(System.Numerics.Vector2*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextGetPanning">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextGetPanning(System.Numerics.Vector2*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextGetPanning(System.Numerics.Vector2@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextResetPanningNative(System.Numerics.Vector2)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextResetPanning(System.Numerics.Vector2)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextMoveToNodeNative(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EditorContextMoveToNode(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetIONative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetIO">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetStyleNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetStyle">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.StyleColorsDarkNative(Hexa.NET.ImNodes.ImNodesStyle*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.StyleColorsDark(Hexa.NET.ImNodes.ImNodesStylePtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.StyleColorsDark">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.StyleColorsDark(Hexa.NET.ImNodes.ImNodesStyle@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.StyleColorsClassicNative(Hexa.NET.ImNodes.ImNodesStyle*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.StyleColorsClassic(Hexa.NET.ImNodes.ImNodesStylePtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.StyleColorsClassic">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.StyleColorsClassic(Hexa.NET.ImNodes.ImNodesStyle@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.StyleColorsLightNative(Hexa.NET.ImNodes.ImNodesStyle*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.StyleColorsLight(Hexa.NET.ImNodes.ImNodesStylePtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.StyleColorsLight">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.StyleColorsLight(Hexa.NET.ImNodes.ImNodesStyle@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginNodeEditorNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginNodeEditor">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EndNodeEditorNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EndNodeEditor">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMapNative(System.Single,Hexa.NET.ImNodes.ImNodesMiniMapLocation,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallback,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallbackUserData)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(System.Single,Hexa.NET.ImNodes.ImNodesMiniMapLocation,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallback,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallbackUserData)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(System.Single,Hexa.NET.ImNodes.ImNodesMiniMapLocation,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallback)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(System.Single,Hexa.NET.ImNodes.ImNodesMiniMapLocation)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(Hexa.NET.ImNodes.ImNodesMiniMapLocation)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(System.Single,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallback)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallback)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(Hexa.NET.ImNodes.ImNodesMiniMapLocation,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallback)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(System.Single,Hexa.NET.ImNodes.ImNodesMiniMapLocation,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallbackUserData)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(System.Single,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallbackUserData)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallbackUserData)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(Hexa.NET.ImNodes.ImNodesMiniMapLocation,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallbackUserData)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(System.Single,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallback,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallbackUserData)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallback,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallbackUserData)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.MiniMap(Hexa.NET.ImNodes.ImNodesMiniMapLocation,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallback,Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallbackUserData)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PushColorStyleNative(Hexa.NET.ImNodes.ImNodesCol,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PushColorStyle(Hexa.NET.ImNodes.ImNodesCol,System.UInt32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PopColorStyleNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PopColorStyle">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PushStyleVarNative(Hexa.NET.ImNodes.ImNodesStyleVar,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PushStyleVar(Hexa.NET.ImNodes.ImNodesStyleVar,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PushStyleVarNative(Hexa.NET.ImNodes.ImNodesStyleVar,System.Numerics.Vector2)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PushStyleVar(Hexa.NET.ImNodes.ImNodesStyleVar,System.Numerics.Vector2)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PopStyleVarNative(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PopStyleVar(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PopStyleVar">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginNodeNative(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginNode(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EndNodeNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EndNode">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeDimensionsNative(System.Numerics.Vector2*,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeDimensions(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeDimensions(System.Numerics.Vector2*,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeDimensions(System.Numerics.Vector2@,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginNodeTitleBarNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginNodeTitleBar">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EndNodeTitleBarNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EndNodeTitleBar">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginInputAttributeNative(System.Int32,Hexa.NET.ImNodes.ImNodesPinShape)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginInputAttribute(System.Int32,Hexa.NET.ImNodes.ImNodesPinShape)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginInputAttribute(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EndInputAttributeNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EndInputAttribute">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginOutputAttributeNative(System.Int32,Hexa.NET.ImNodes.ImNodesPinShape)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginOutputAttribute(System.Int32,Hexa.NET.ImNodes.ImNodesPinShape)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginOutputAttribute(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EndOutputAttributeNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EndOutputAttribute">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginStaticAttributeNative(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.BeginStaticAttribute(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EndStaticAttributeNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.EndStaticAttribute">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PushAttributeFlagNative(Hexa.NET.ImNodes.ImNodesAttributeFlags)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PushAttributeFlag(Hexa.NET.ImNodes.ImNodesAttributeFlags)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PopAttributeFlagNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.PopAttributeFlag">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LinkNative(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.Link(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetNodeDraggableNative(System.Int32,System.Byte)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetNodeDraggable(System.Int32,System.Boolean)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetNodeScreenSpacePosNative(System.Int32,System.Numerics.Vector2)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetNodeScreenSpacePos(System.Int32,System.Numerics.Vector2)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetNodeEditorSpacePosNative(System.Int32,System.Numerics.Vector2)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetNodeEditorSpacePos(System.Int32,System.Numerics.Vector2)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetNodeGridSpacePosNative(System.Int32,System.Numerics.Vector2)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetNodeGridSpacePos(System.Int32,System.Numerics.Vector2)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeScreenSpacePosNative(System.Numerics.Vector2*,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeScreenSpacePos(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeScreenSpacePos(System.Numerics.Vector2*,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeScreenSpacePos(System.Numerics.Vector2@,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeEditorSpacePosNative(System.Numerics.Vector2*,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeEditorSpacePos(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeEditorSpacePos(System.Numerics.Vector2*,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeEditorSpacePos(System.Numerics.Vector2@,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeGridSpacePosNative(System.Numerics.Vector2*,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeGridSpacePos(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeGridSpacePos(System.Numerics.Vector2*,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetNodeGridSpacePos(System.Numerics.Vector2@,System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SnapNodeToGridNative(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SnapNodeToGrid(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsEditorHoveredNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsEditorHovered">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsNodeHoveredNative(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsNodeHovered(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsNodeHovered(System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkHoveredNative(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkHovered(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkHovered(System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsPinHoveredNative(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsPinHovered(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsPinHovered(System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.NumSelectedNodesNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.NumSelectedNodes">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.NumSelectedLinksNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.NumSelectedLinks">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetSelectedNodesNative(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetSelectedNodes(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetSelectedNodes(System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetSelectedLinksNative(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetSelectedLinks(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetSelectedLinks(System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.ClearNodeSelectionNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.ClearNodeSelection">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.ClearLinkSelectionNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.ClearLinkSelection">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SelectNodeNative(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SelectNode(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.ClearNodeSelectionNative(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.ClearNodeSelection(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsNodeSelectedNative(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsNodeSelected(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SelectLinkNative(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SelectLink(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.ClearLinkSelectionNative(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.ClearLinkSelection(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkSelectedNative(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkSelected(System.Int32)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsAttributeActiveNative">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsAttributeActive">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsAnyAttributeActiveNative(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsAnyAttributeActive(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsAnyAttributeActive">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsAnyAttributeActive(System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkStartedNative(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkStarted(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkStarted(System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkDroppedNative(System.Int32*,System.Byte)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkDropped(System.Int32*,System.Boolean)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkDropped(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkDropped">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkDropped(System.Boolean)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkDropped(System.Int32@,System.Boolean)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkDropped(System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreatedNative(System.Int32*,System.Int32*,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreatedNative(System.Int32*,System.Int32*,System.Int32*,System.Int32*,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Int32*,System.Int32*,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Int32*,System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Int32*,System.Int32*,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Int32*,System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Int32*,System.Int32*,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Int32*,System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Int32*,System.Int32*,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Int32*,System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Int32@,System.Int32*,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Int32@,System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Int32@,System.Int32*,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Int32@,System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Int32@,System.Int32*,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Int32@,System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Int32@,System.Int32*,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Int32@,System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Int32*,System.Int32@,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Int32*,System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Int32*,System.Int32@,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Int32*,System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Int32*,System.Int32@,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Int32*,System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Int32*,System.Int32@,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Int32*,System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Int32@,System.Int32@,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Int32@,System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Int32@,System.Int32@,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Int32@,System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Int32@,System.Int32@,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Int32*,System.Int32*,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Int32*,System.Int32*,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Int32*,System.Int32*,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Int32*,System.Int32*,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Int32@,System.Int32*,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Int32@,System.Int32*,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Int32@,System.Int32*,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Int32@,System.Int32*,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Int32*,System.Int32@,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Int32*,System.Int32@,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Int32*,System.Int32@,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Int32*,System.Int32@,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32*,System.Int32@,System.Int32@,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32*,System.Int32@,System.Int32@,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32*,System.Int32@,System.Int32@,System.Int32@,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkCreated(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Boolean@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkDestroyedNative(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkDestroyed(System.Int32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.IsLinkDestroyed(System.Int32@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveCurrentEditorStateToIniStringNative(System.UIntPtr*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveCurrentEditorStateToIniString(System.UIntPtr*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveCurrentEditorStateToIniString">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveCurrentEditorStateToIniStringS">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveCurrentEditorStateToIniStringS(System.UIntPtr*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniStringNative(Hexa.NET.ImNodes.ImNodesEditorContext*,System.UIntPtr*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniString(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.UIntPtr*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniString(Hexa.NET.ImNodes.ImNodesEditorContextPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniStringS(Hexa.NET.ImNodes.ImNodesEditorContextPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniStringS(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.UIntPtr*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniString(Hexa.NET.ImNodes.ImNodesEditorContext@,System.UIntPtr*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniString(Hexa.NET.ImNodes.ImNodesEditorContext@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniStringS(Hexa.NET.ImNodes.ImNodesEditorContext@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniStringS(Hexa.NET.ImNodes.ImNodesEditorContext@,System.UIntPtr*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadCurrentEditorStateFromIniStringNative(System.Byte*,System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadCurrentEditorStateFromIniString(System.Byte*,System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadCurrentEditorStateFromIniString(System.Byte@,System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadCurrentEditorStateFromIniString(System.ReadOnlySpan{System.Byte},System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadCurrentEditorStateFromIniString(System.String,System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniStringNative(Hexa.NET.ImNodes.ImNodesEditorContext*,System.Byte*,System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniString(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.Byte*,System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniString(Hexa.NET.ImNodes.ImNodesEditorContext@,System.Byte*,System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniString(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.Byte@,System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniString(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.ReadOnlySpan{System.Byte},System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniString(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.String,System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniString(Hexa.NET.ImNodes.ImNodesEditorContext@,System.Byte@,System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniString(Hexa.NET.ImNodes.ImNodesEditorContext@,System.ReadOnlySpan{System.Byte},System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniString(Hexa.NET.ImNodes.ImNodesEditorContext@,System.String,System.UIntPtr)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveCurrentEditorStateToIniFileNative(System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveCurrentEditorStateToIniFile(System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveCurrentEditorStateToIniFile(System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveCurrentEditorStateToIniFile(System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveCurrentEditorStateToIniFile(System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniFileNative(Hexa.NET.ImNodes.ImNodesEditorContext*,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniFile(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniFile(Hexa.NET.ImNodes.ImNodesEditorContext@,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniFile(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniFile(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniFile(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniFile(Hexa.NET.ImNodes.ImNodesEditorContext@,System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniFile(Hexa.NET.ImNodes.ImNodesEditorContext@,System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SaveEditorStateToIniFile(Hexa.NET.ImNodes.ImNodesEditorContext@,System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadCurrentEditorStateFromIniFileNative(System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadCurrentEditorStateFromIniFile(System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadCurrentEditorStateFromIniFile(System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadCurrentEditorStateFromIniFile(System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadCurrentEditorStateFromIniFile(System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniFileNative(Hexa.NET.ImNodes.ImNodesEditorContext*,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniFile(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniFile(Hexa.NET.ImNodes.ImNodesEditorContext@,System.Byte*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniFile(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniFile(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniFile(Hexa.NET.ImNodes.ImNodesEditorContextPtr,System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniFile(Hexa.NET.ImNodes.ImNodesEditorContext@,System.Byte@)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniFile(Hexa.NET.ImNodes.ImNodesEditorContext@,System.ReadOnlySpan{System.Byte})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.LoadEditorStateFromIniFile(Hexa.NET.ImNodes.ImNodesEditorContext@,System.String)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Hexa.NET.ImNodes.ImNodes.GetIOKeyCtrlPtrNative" -->
+        <!-- Badly formed XML comment ignored for member "M:Hexa.NET.ImNodes.ImNodes.GetIOKeyCtrlPtr" -->
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetAllocatorFunctionsNative(Hexa.NET.ImGui.ImGuiMemAllocFunc,Hexa.NET.ImGui.ImGuiMemFreeFunc,System.Void*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.SetAllocatorFunctions(Hexa.NET.ImGui.ImGuiMemAllocFunc,Hexa.NET.ImGui.ImGuiMemFreeFunc,System.Void*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetAllocatorFunctionsNative(*,*,System.Void**)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.GetAllocatorFunctions(*,*,System.Void**)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodes.InitApi(HexaGen.Runtime.INativeContext)">
+            <summary>
+            Initializes the function table, automatically called. Do not call manually, only after <see cref="M:Hexa.NET.ImNodes.ImNodes.FreeApi"/>.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallback">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesAttributeFlags">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesAttributeFlags.None">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesAttributeFlags.EnableLinkDetachWithDragClick">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesAttributeFlags.EnableLinkCreationOnSnap">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesCol">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.NodeBackground">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.NodeBackgroundHovered">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.NodeBackgroundSelected">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.NodeOutline">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.TitleBar">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.TitleBarHovered">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.TitleBarSelected">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.Link">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.LinkHovered">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.LinkSelected">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.Pin">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.PinHovered">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.BoxSelector">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.BoxSelectorOutline">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.GridBackground">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.GridLine">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.GridLinePrimary">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.MiniMapBackground">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.MiniMapBackgroundHovered">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.MiniMapOutline">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.MiniMapOutlineHovered">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.MiniMapNodeBackground">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.MiniMapNodeBackgroundHovered">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.MiniMapNodeBackgroundSelected">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.MiniMapNodeOutline">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.MiniMapLink">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.MiniMapLinkSelected">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.MiniMapCanvas">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.MiniMapCanvasOutline">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesCol.Count">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesMiniMapLocation">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesMiniMapLocation.BottomLeft">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesMiniMapLocation.BottomRight">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesMiniMapLocation.TopLeft">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesMiniMapLocation.TopRight">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesPinShape">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesPinShape.Circle">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesPinShape.CircleFilled">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesPinShape.Triangle">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesPinShape.TriangleFilled">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesPinShape.Quad">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesPinShape.QuadFilled">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesStyleFlags">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleFlags.None">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleFlags.NodeOutline">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleFlags.GridLines">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleFlags.GridLinesPrimary">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleFlags.GridSnapping">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesStyleVar">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.GridSpacing">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.NodeCornerRounding">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.NodePadding">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.NodeBorderThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.LinkThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.LinkLineSegmentsPerLength">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.LinkHoverDistance">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.PinCircleRadius">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.PinQuadSideLength">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.PinTriangleSideLength">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.PinLineThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.PinHoverRadius">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.PinOffset">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.MiniMapPadding">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.MiniMapOffset">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyleVar.Count">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallbackUserData">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallbackUserData.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesMiniMapNodeHoveringCallbackUserData.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.EmulateThreeButtonMouse">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.EmulateThreeButtonMouse.Modifier">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.EmulateThreeButtonMouse.#ctor(System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.EmulateThreeButtonMouse.Destroy">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.EmulateThreeButtonMousePtr">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.EmulateThreeButtonMousePtr.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.EmulateThreeButtonMousePtr.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.EmulateThreeButtonMousePtr.Modifier">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.EmulateThreeButtonMousePtr.Destroy">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesContext">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesContextPtr">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesContextPtr.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesContextPtr.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesEditorContext">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesEditorContextPtr">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesEditorContextPtr.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesEditorContextPtr.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesIO">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesIO.EmulateThreeButtonMouse">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesIO.LinkDetachWithModifierClick">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesIO.MultipleSelectModifier">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesIO.AltMouseButton">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesIO.AutoPanningSpeed">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesIO.#ctor(Hexa.NET.ImNodes.EmulateThreeButtonMouse,Hexa.NET.ImNodes.LinkDetachWithModifierClick,Hexa.NET.ImNodes.MultipleSelectModifier,System.Int32,System.Single)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesIO.Destroy">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesIOPtr">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesIOPtr.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesIOPtr.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesIOPtr.EmulateThreeButtonMouse">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesIOPtr.LinkDetachWithModifierClick">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesIOPtr.MultipleSelectModifier">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesIOPtr.AltMouseButton">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesIOPtr.AutoPanningSpeed">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesIOPtr.Destroy">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesStyle">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.GridSpacing">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.NodeCornerRounding">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.NodePadding">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.NodeBorderThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.LinkThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.LinkLineSegmentsPerLength">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.LinkHoverDistance">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.PinCircleRadius">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.PinQuadSideLength">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.PinTriangleSideLength">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.PinLineThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.PinHoverRadius">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.PinOffset">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.MiniMapPadding">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.MiniMapOffset">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.Flags">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.ImNodesStyle.Colors_0">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesStyle.#ctor(System.Single,System.Single,System.Numerics.Vector2,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,Hexa.NET.ImNodes.ImNodesStyleFlags,System.UInt32*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesStyle.#ctor(System.Single,System.Single,System.Numerics.Vector2,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Numerics.Vector2,System.Numerics.Vector2,Hexa.NET.ImNodes.ImNodesStyleFlags,System.Span{System.UInt32})">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesStyle.Destroy">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.ImNodesStylePtr">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesStylePtr.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesStylePtr.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.GridSpacing">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.NodeCornerRounding">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.NodePadding">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.NodeBorderThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.LinkThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.LinkLineSegmentsPerLength">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.LinkHoverDistance">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.PinCircleRadius">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.PinQuadSideLength">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.PinTriangleSideLength">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.PinLineThickness">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.PinHoverRadius">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.PinOffset">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.MiniMapPadding">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.MiniMapOffset">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.Flags">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.ImNodesStylePtr.Colors">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.ImNodesStylePtr.Destroy">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.LinkDetachWithModifierClick">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.LinkDetachWithModifierClick.Modifier">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.LinkDetachWithModifierClick.#ctor(System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.LinkDetachWithModifierClick.Destroy">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.LinkDetachWithModifierClickPtr">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.LinkDetachWithModifierClickPtr.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.LinkDetachWithModifierClickPtr.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.LinkDetachWithModifierClickPtr.Modifier">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.LinkDetachWithModifierClickPtr.Destroy">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.MultipleSelectModifier">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImNodes.MultipleSelectModifier.Modifier">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.MultipleSelectModifier.#ctor(System.Boolean*)">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.MultipleSelectModifier.Destroy">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImNodes.MultipleSelectModifierPtr">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.MultipleSelectModifierPtr.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.MultipleSelectModifierPtr.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="P:Hexa.NET.ImNodes.MultipleSelectModifierPtr.Modifier">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImNodes.MultipleSelectModifierPtr.Destroy">
+            <summary>
+            To be documented.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hexa.NET.ImGui.Widgets</name>
+    </assembly>
+    <members>
+        <member name="T:Hexa.NET.ImGui.Widgets.ComboEnumHelper`1">
+            <summary>
+            A helper class for working with ImGui combo boxes to select enum values of a specified enum type.
+            </summary>
+            <typeparam name="T">The enum type.</typeparam>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.ComboEnumHelper`1.Combo(System.String,`0@)">
+            <summary>
+            Displays a combo box to select an enum value.
+            </summary>
+            <param name="label">The label for the combo box.</param>
+            <param name="value">The currently selected enum value (modified by user interaction).</param>
+            <returns><c>true</c> if the user selects a new value, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.ComboEnumHelper`1.Text(`0)">
+            <summary>
+            Displays the text representation of an enum value.
+            </summary>
+            <param name="value">The enum value to display.</param>
+        </member>
+        <member name="T:Hexa.NET.ImGui.Widgets.ComboEnumHelper">
+            <summary>
+            A helper class for working with ImGui combo boxes to select enum values of various enum types.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.ComboEnumHelper.Combo(System.String,System.Type,System.Object@)">
+            <summary>
+            Displays a combo box to select an enum value of a specified enum type.
+            </summary>
+            <param name="label">The label for the combo box.</param>
+            <param name="type">The enum type to select values from.</param>
+            <param name="value">The currently selected enum value (modified by user interaction).</param>
+            <returns><c>true</c> if the user selects a new value, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.ComboEnumHelper.Text(System.Type,System.Object)">
+            <summary>
+            Displays the text representation of an enum value of a specified enum type.
+            </summary>
+            <param name="type">The enum type to select values from.</param>
+            <param name="value">The enum value to display.</param>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.AllowedExtensions">
+            <summary>
+            Gets the list of file extensions allowed for filtering.<br/>
+            Extensions are used to determine which files are displayed in the dialog<br/>
+            when <see cref="P:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.OnlyAllowFilteredExtensions"/> is enabled.<br/>
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.RootFolder">
+            <summary>
+            Gets or sets the root folder of the dialog.<br/>
+            - This is the starting point of navigation.<br/>
+            - The dialog cannot navigate above this folder.<br/>
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.CurrentFolder">
+            <summary>
+            Gets or sets the current folder displayed in the dialog.<br/>
+            - When set, the dialog updates to display the contents of the specified folder.<br/>
+            - If the provided path does not exist, the folder remains unchanged.<br/>
+            </summary>
+            <param name="value">The path to the folder to set as the current folder.</param>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.CurrentDir">
+            <summary>
+            Gets a <see cref="T:System.IO.DirectoryInfo"/> object representing the current folder.<br/>
+            Provides additional metadata about the current folder, such as attributes or creation time.<br/>
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.ShowHiddenFiles">
+            <summary>
+            Gets or sets whether hidden files are displayed in the dialog.<br/>
+            - When true: Hidden files are visible.<br/>
+            - When false: Hidden files are not displayed.<br/>
+            Changes to this property automatically call <see cref="M:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.Refresh"/>
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.ShowFiles">
+            <summary>
+            Gets or sets whether files are displayed in the dialog.<br/>
+            - When true: Files are visible in the dialog.<br/>
+            - When false: Files are hidden.<br/>
+            Changes to this property automatically call <see cref="M:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.Refresh"/>
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.ShowFolders">
+            <summary>
+            Gets or sets whether folders are displayed in the dialog.<br/>
+            - When true: Folders are visible in the dialog.<br/>
+            - When false: Folders are hidden.<br/>
+            Changes to this property automatically call <see cref="M:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.Refresh"/>
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.OnlyAllowFilteredExtensions">
+            <summary>
+            Gets or sets whether only files with allowed extensions are displayed in the dialog.<br/>
+            - When true: Files with extensions listed in <see cref="P:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.AllowedExtensions"/> are displayed.<br/>
+            - When false: Files are not filtered by their extensions.<br/>
+            Changes to this property automatically call <see cref="M:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.Refresh"/>
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.OnlyAllowFolders">
+            <summary>
+            Gets or sets whether the dialog allows selecting folders only.<br/>
+            - When true: Only folders are displayed and selectable.<br/>
+            - When false: Both files and folders can be displayed and selected.<br/>
+            Adjusts `ShowFiles` and `ShowFolders` properties accordingly.<br/>
+            Changes to this property automatically call <see cref="M:Hexa.NET.ImGui.Widgets.Dialogs.FileDialogBase.Refresh"/>
+            </summary>
+            <remarks>
+            When true, it forces a dialog like <see cref="T:Hexa.NET.ImGui.Widgets.Dialogs.OpenFileDialog"/> to behave like <see cref="T:Hexa.NET.ImGui.Widgets.Dialogs.OpenFolderDialog"/>.<br/>
+            It is recommended to use <see cref="T:Hexa.NET.ImGui.Widgets.Dialogs.OpenFolderDialog"/> instead for better clarity and intent.<br/>
+            </remarks>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.SourceGenerationContextDictionary.DictionaryStringString">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.SourceGenerationContextDictionary.String">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.SourceGenerationContextDictionary.Default">
+            <summary>
+            The default <see cref="T:System.Text.Json.Serialization.JsonSerializerContext"/> associated with a default <see cref="T:System.Text.Json.JsonSerializerOptions"/> instance.
+            </summary>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.SourceGenerationContextDictionary.GeneratedSerializerOptions">
+            <summary>
+            The source-generated options associated with this context.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.Dialogs.SourceGenerationContextDictionary.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.Dialogs.SourceGenerationContextDictionary.#ctor(System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.Dialogs.SourceGenerationContextDictionary.GetTypeInfo(System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="P:Hexa.NET.ImGui.Widgets.Dialogs.OpenFileDialog.SelectedFile">
+            <summary>
+            Gets the selected path.<br/>
+            - When selecting files, this returns the selected file path.<br/>
+            - When `OnlyAllowFolders` is enabled, this returns the selected folder path.<br/>
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImGui.Widgets.Extensions.EnumExtension">
+            <summary>
+            Provides extension methods for enumerations to cast them to integral types.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.Extensions.EnumExtension.AsInteger``2(``0)">
+            <summary>
+            Casts an enumeration value to the specified integral type, with type size checking.
+            </summary>
+            <typeparam name="TEnum">The enumeration type.</typeparam>
+            <typeparam name="TInt">The integral type to cast to.</typeparam>
+            <param name="enumValue">The enumeration value to cast.</param>
+            <returns>The casted value of the specified integral type.</returns>
+            <exception cref="T:System.Exception">Thrown when the size of the enumeration does not match the size of the target integral type.</exception>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.Extensions.EnumExtension.AsInteger``1(``0)">
+            <summary>
+            Casts an enumeration value to a long integral type with size checking.
+            </summary>
+            <typeparam name="TEnum">The enumeration type.</typeparam>
+            <param name="enumValue">The enumeration value to cast.</param>
+            <returns>The casted value of type long.</returns>
+            <exception cref="T:System.Exception">Thrown when the size of the enumeration does not match supported integral types.</exception>
+        </member>
+        <member name="T:Hexa.NET.ImGui.Widgets.ImageHelper">
+            <summary>
+            A helper class for working with ImGui images
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.ImageHelper.ImageCenteredV(Hexa.NET.ImGui.ImTextureRef,System.Numerics.Vector2)">
+            <summary>
+            Displays an image centered vertically in the window with the specified size.
+            </summary>
+            <param name="image">The identifier of the image to display.</param>
+            <param name="size">The size of the image.</param>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.ImageHelper.ImageCenteredH(Hexa.NET.ImGui.ImTextureRef,System.Numerics.Vector2)">
+            <summary>
+            Displays an image centered horizontally in the window with the specified size.
+            </summary>
+            <param name="image">The identifier of the image to display.</param>
+            <param name="size">The size of the image.</param>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.ImageHelper.ImageCenteredVH(Hexa.NET.ImGui.ImTextureRef,System.Numerics.Vector2)">
+            <summary>
+            Displays an image centered both vertically and horizontally in the window with the specified size.
+            </summary>
+            <param name="image">The identifier of the image to display.</param>
+            <param name="size">The size of the image.</param>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.ImageHelper.ImageScaleTo(Hexa.NET.ImGui.ImTextureRef,System.Numerics.Vector2,System.Numerics.Vector2)">
+            <summary>
+            Displays an image scaled to fit within the specified destination size, preserving aspect ratio.
+            </summary>
+            <param name="image">The identifier of the image to display.</param>
+            <param name="imgSize">The original size of the image.</param>
+            <param name="destSize">The maximum size to scale the image to fit within.</param>
+        </member>
+        <member name="T:Hexa.NET.ImGui.Widgets.ImGuiName">
+            <summary>
+            A struct representing an identifier for ImGui widgets and elements.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.ImGuiName.RawId">
+            <summary>
+            The raw identifier used to generate unique names.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.ImGuiName.Name">
+            <summary>
+            The primary name associated with the identifier.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.ImGuiName.UniqueName">
+            <summary>
+            The unique name generated by combining the primary name and a unique identifier.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.ImGuiName.Id">
+            <summary>
+            A simplified identifier used in certain contexts.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.ImGuiName.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hexa.NET.ImGui.Widgets.ImGuiName"/> struct with a given name.
+            </summary>
+            <param name="name">The primary name to associate with the identifier.</param>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.ImGuiName.op_Implicit(Hexa.NET.ImGui.Widgets.ImGuiName)~System.String">
+            <summary>
+            Implicitly converts an <see cref="T:Hexa.NET.ImGui.Widgets.ImGuiName"/> instance to a string.
+            </summary>
+            <param name="name">The <see cref="T:Hexa.NET.ImGui.Widgets.ImGuiName"/> instance to convert.</param>
+            <returns>The unique name as a string.</returns>
+        </member>
+        <member name="T:Hexa.NET.ImGui.Widgets.ImGuiWidgetFlameGraph">
+            <summary>
+            A utility class for rendering flame graph-style visualizations using ImGui.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImGui.Widgets.ImGuiWidgetFlameGraph.ValuesGetter">
+            <summary>
+            A delegate that provides values for the flame graph rendering.
+            </summary>
+            <param name="start">Pointer to the start value.</param>
+            <param name="end">Pointer to the end value.</param>
+            <param name="level">Pointer to the level value.</param>
+            <param name="caption">Pointer to the caption.</param>
+            <param name="data">The data source.</param>
+            <param name="idx">The index of the data.</param>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.ImGuiWidgetFlameGraph.PlotFlame(System.String,Hexa.NET.ImGui.Widgets.ImGuiWidgetFlameGraph.ValuesGetter,System.Void*,System.Int32,System.Int32@,System.Boolean,System.Int32,System.String,System.Single,System.Single,System.Numerics.Vector2)">
+            <summary>
+            Renders a flame graph using ImGui.
+            </summary>
+            <param name="label">The label for the flame graph.</param>
+            <param name="valuesGetter">A delegate to retrieve values for rendering.</param>
+            <param name="data">The data source.</param>
+            <param name="valuesCount">The count of values to render.</param>
+            <param name="selected">The index of the selected value (optional).</param>
+            <param name="flip">Whether to flip the graph (optional).</param>
+            <param name="valuesOffset">The offset for values (optional).</param>
+            <param name="overlayText">Text overlay for the graph (optional).</param>
+            <param name="scaleMin">Minimum scale for the graph (optional).</param>
+            <param name="scaleMax">Maximum scale for the graph (optional).</param>
+            <param name="graphSize">Size of the graph (optional).</param>
+        </member>
+        <member name="T:Hexa.NET.ImGui.Widgets.MessageBox">
+            <summary>
+            Represents a message box that can be displayed to the user.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBox.Title">
+            <summary>
+            Gets or sets the title of the message box.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBox.Message">
+            <summary>
+            Gets or sets the message text to be displayed in the message box.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBox.Type">
+            <summary>
+            Gets the type of the message box, which determines the available actions.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBox.Result">
+            <summary>
+            Gets or sets the result of the message box (e.g., user response).
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBox.Userdata">
+            <summary>
+            Gets or sets optional user data associated with the message box.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBox.Callback">
+            <summary>
+            Gets or sets an optional callback action to be invoked when the message box is closed.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBox.Parent">
+            <summary>
+            Gets or sets the parent UI Element. (Used for centering on parent)
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.MessageBox.#ctor(System.String,System.String,Hexa.NET.ImGui.Widgets.MessageBoxType,System.Object,System.Action{Hexa.NET.ImGui.Widgets.MessageBox,System.Object},Hexa.NET.ImGui.Widgets.IUIElement)">
+            <summary>
+            Initializes a new instance of the MessageBox struct with the provided parameters.
+            </summary>
+            <param name="title">The title of the message box.</param>
+            <param name="message">The message text to be displayed.</param>
+            <param name="type">The type of the message box.</param>
+            <param name="userdata">Optional user data associated with the message box.</param>
+            <param name="callback">Optional callback action to be invoked when the message box is closed.</param>
+            <param name="parent">Optional parent element for centering.</param>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.MessageBox.Show(System.String,System.String,Hexa.NET.ImGui.Widgets.MessageBoxType,Hexa.NET.ImGui.Widgets.IUIElement)">
+            <summary>
+            Shows a message box with the specified title, message, and type.
+            </summary>
+            <param name="title">The title of the message box.</param>
+            <param name="message">The message text to be displayed.</param>
+            <param name="type">The type of the message box.</param>
+            <param name="parent">Optional parent element for centering.</param>
+            <returns>The created message box instance.</returns>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.MessageBox.Show(System.String,System.String,System.Object,System.Action{Hexa.NET.ImGui.Widgets.MessageBox,System.Object},Hexa.NET.ImGui.Widgets.MessageBoxType,Hexa.NET.ImGui.Widgets.IUIElement)">
+            <summary>
+            Shows a message box with the specified title, message, user data, callback, and type.
+            </summary>
+            <param name="title">The title of the message box.</param>
+            <param name="message">The message text to be displayed.</param>
+            <param name="userdata">Optional user data associated with the message box.</param>
+            <param name="callback">Optional callback action to be invoked when the message box is closed.</param>
+            <param name="type">The type of the message box.</param>
+            <param name="parent">Optional parent element for centering.</param>
+            <returns>The created message box instance.</returns>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.MessageBox.Draw">
+            <summary>
+            Draws the message box and handles user interactions.
+            </summary>
+            <returns>True if the message box is still shown; otherwise, false.</returns>
+        </member>
+        <member name="T:Hexa.NET.ImGui.Widgets.MessageBoxes">
+            <summary>
+            A static class responsible for managing and displaying message boxes. Fully thread-safe.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.MessageBoxes.Draw">
+            <summary>
+            Draws and updates all the open message boxes.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.MessageBoxes.Show(Hexa.NET.ImGui.Widgets.MessageBox)">
+            <summary>
+            Shows a message box to be displayed and managed by the MessageBoxes class.
+            </summary>
+            <param name="messageBox">The MessageBox instance to be displayed.</param>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.MessageBoxes.Close(System.String)">
+            <summary>
+            Closes a specific message box by its title.
+            </summary>
+            <param name="title">The title of the message box to be closed.</param>
+            <returns>True if the message box was found and closed; otherwise, false.</returns>
+        </member>
+        <member name="T:Hexa.NET.ImGui.Widgets.MessageBoxResult">
+            <summary>
+            Represents the different results or choices in a message box.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBoxResult.None">
+            <summary>
+            No specific result; typically used when no choice is made.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBoxResult.Ok">
+            <summary>
+            The "OK" button or choice in a message box.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBoxResult.Cancel">
+            <summary>
+            The "Cancel" button or choice in a message box.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBoxResult.Yes">
+            <summary>
+            The "Yes" button or choice in a message box.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBoxResult.No">
+            <summary>
+            The "No" button or choice in a message box.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImGui.Widgets.MessageBoxType">
+            <summary>
+            Represents the different types of message boxes.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBoxType.Ok">
+            <summary>
+            An "OK" button only message box.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBoxType.OkCancel">
+            <summary>
+            A message box with "OK" and "Cancel" buttons.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBoxType.YesCancel">
+            <summary>
+            A message box with "Yes" and "Cancel" buttons.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBoxType.YesNo">
+            <summary>
+            A message box with "Yes" and "No" buttons.
+            </summary>
+        </member>
+        <member name="F:Hexa.NET.ImGui.Widgets.MessageBoxType.YesNoCancel">
+            <summary>
+            A message box with "Yes," "No," and "Cancel" buttons.
+            </summary>
+        </member>
+        <member name="T:Hexa.NET.ImGui.Widgets.TextHelper">
+            <summary>
+            A text helper for ImGui.
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.TextHelper.TextCenteredV(System.String)">
+            <summary>
+            Centers a text vertically.
+            </summary>
+            <param name="text">The text.</param>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.TextHelper.TextCenteredH(System.String)">
+            <summary>
+            Centers a text horizontally.
+            </summary>
+            <param name="text">The text.</param>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.TextHelper.TextCenteredVH(System.String)">
+            <summary>
+            Centers a text vertically and horizontally.
+            </summary>
+            <param name="text">The text.</param>
+        </member>
+        <member name="T:Hexa.NET.ImGui.Widgets.TooltipHelper">
+            <summary>
+            A tooltip helper for ImGui
+            </summary>
+        </member>
+        <member name="M:Hexa.NET.ImGui.Widgets.TooltipHelper.Tooltip(System.String)">
+            <summary>
+            Shows a tooltip if the item is hovered with <paramref name="desc"/> as text.
+            </summary>
+            <param name="desc">The text of the tooltip.</param>
+        </member>
+    </members>
+</doc>
