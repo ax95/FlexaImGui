@@ -74,21 +74,22 @@ public class FlexaImGui : GamePlugin
 	private ushort[] _indices = [];
 	private ushort[] _dynIndices = [];
 	private bool _activeFrame;
+	private bool _activeRender;
 	
 	/// <summary>
 	/// Whether the FlexaImGui plugin is enabled.
 	/// </summary>
-	public bool Enabled = true;
+	public bool Enabled;
 	
 	/// <summary>
 	/// Whether ImGui input is enabled.
 	/// </summary>
-	public bool EnableInput = true;
+	public bool EnableInput;
 	
 	/// <summary>
 	/// Whether ImGui drawing is enabled.
 	/// </summary>
-	public bool EnableDrawing = true;
+	public bool EnableDrawing;
 
 	/// <summary>
 	/// Whether automatic imgui.ini saving/loading is enabled (on init and deinit).
@@ -129,10 +130,15 @@ public class FlexaImGui : GamePlugin
 	/// <inheritdoc />
 	public override void @Initialize()
 	{
+		// Enable plugin
+		Instance = this;
+		Enabled = true;
+		EnableInput = true;
+		EnableDrawing = true;
+		
 		base.Initialize();
 
 		// Bind update events
-		Scripting.Update += OnUpdate;
 		Scripting.LateUpdate += OnLateUpdate;
 		MainRenderTask.Instance.PostRender += OnPostRender;
 	}
@@ -191,16 +197,338 @@ public class FlexaImGui : GamePlugin
 		io.ConfigDpiScaleFonts = true;
 	}
 
-	private void OnUpdate()
+	private void OnLateUpdate()
 	{
-		if (!Enabled)
+		if (!_activeFrame)
+			return;
+		
+		// End frame
+		if (ImGuiP.GetCurrentWindowRead() == ImGuiWindowPtr.Null)
+			return;
+		
+#if INCLUDE_IMWIDGETS
+		Hexa.NET.ImGui.Widgets.WidgetManager.Draw();
+#endif
+		ImGui.Render();
+		_activeFrame = false;
+		_activeRender = true;
+	}
+	
+	private unsafe void OnPostRender(GPUContext arg0, ref RenderContext context)
+	{
+		if (!_activeRender || !EnableDrawing)
+			return;
+		
+		// Draw ImGui data into the output (via Render2D)
+		var drawData = ImGui.GetDrawData();
+		if (drawData.IsNull)
+			return;
+		
+		// Update textures
+		for (int i = 0; i < drawData.Textures.Size; i++)
+			if (!drawData.Textures[i].IsNull && drawData.Textures[i].Status != ImTextureStatus.Ok)
+				UpdateTexture(arg0, drawData.Textures[i]);
+
+		// Render command lists
+		var viewport = context.Task.OutputViewport;
+		Render2D.Begin(arg0, context.Task.OutputView, null, ref viewport);
+		
+		for (int cmdListIndex = 0; cmdListIndex < drawData.CmdListsCount; cmdListIndex++)
 		{
-			_activeFrame = false;
+			var cmdList = drawData.CmdLists[cmdListIndex];
+
+			// Resize internal arrays to fit buffers
+			if (cmdList.VtxBuffer.Size > _vertices.Length)
+			{
+				int newSize = NextPowerOf2(cmdList.VtxBuffer.Size);
+				_vertices = new Float2[newSize];
+				_uvs = new Float2[newSize];
+				_colors = new Color[newSize];
+			}
+			if (cmdList.IdxBuffer.Size > _indices.Length)
+			{
+				_indices = new ushort[NextPowerOf2(cmdList.IdxBuffer.Size)];
+			}
+			
+			// Convert vertex buffer
+			for (int i = 0; i < cmdList.VtxBuffer.Size; i++)
+			{
+				var v = cmdList.VtxBuffer.Data[i];
+				// Offset vertices for pixel alignment
+				_vertices[i] = new Float2(v.Pos.X + 0.5f, v.Pos.Y + 0.5f); 
+				_uvs[i] = new Float2(v.Uv.X, v.Uv.Y);
+				_colors[i] = new Color(
+					(byte)(v.Col & 0xFF),
+					(byte)((v.Col >> 8) & 0xFF),
+					(byte)((v.Col >> 16) & 0xFF),
+					(byte)((v.Col >> 24) & 0xFF));
+			}
+			
+			// Convert index buffer
+			for (int i = 0; i < cmdList.IdxBuffer.Size; i++)
+			{
+				_indices[i] = cmdList.IdxBuffer.Data[i];
+			}
+			
+			// Submit draw commands
+			for (int cmdIndex = 0; cmdIndex < cmdList.CmdBuffer.Size; cmdIndex++)
+			{
+				var cmd = cmdList.CmdBuffer[cmdIndex];
+				if (cmd.UserCallback != null)
+				{
+					delegate*<ImDrawList*, ImDrawCmd*, void> userCallback = 
+						(delegate*<ImDrawList*, ImDrawCmd*, void>)cmd.UserCallback;
+
+					userCallback(cmdList, &cmd);
+				}
+				else
+				{
+					// Perform scissors clipping
+					Float2 clipMin = new Float2(
+						(cmd.ClipRect.X - drawData.DisplayPos.X) * drawData.FramebufferScale.X, 
+						(cmd.ClipRect.Y - drawData.DisplayPos.Y) * drawData.FramebufferScale.Y);
+					Float2 clipMax = new Float2(
+						(cmd.ClipRect.Z - drawData.DisplayPos.X) * drawData.FramebufferScale.X, 
+						(cmd.ClipRect.W - drawData.DisplayPos.Y) * drawData.FramebufferScale.Y);
+					if (clipMax.X <= clipMin.X || clipMax.Y <= clipMin.Y)
+						continue;
+					
+					Rectangle scissor = new Rectangle(
+						clipMin.X, clipMin.Y, clipMax.X - clipMin.X, clipMax.Y - clipMin.Y);
+					Render2D.PushClip(scissor);
+					
+					// Draw textured indexed triangles list
+					int texId = (int)cmd.GetTexID().Handle - 1;
+					var tex = _textures[texId];
+					
+					Render2D.DrawTexturedTriangles(tex, 
+						new Span<ushort>(_indices, (int)cmd.IdxOffset, (int)cmd.ElemCount).ToArray(), 
+						new Span<Float2>(_vertices, (int)cmd.VtxOffset, _vertices.Length - (int)cmd.VtxOffset).ToArray(), 
+						new Span<Float2>(_uvs, (int)cmd.VtxOffset, _uvs.Length - (int)cmd.VtxOffset).ToArray(), 
+						new Span<Color>(_colors, (int)cmd.VtxOffset, _colors.Length - (int)cmd.VtxOffset).ToArray());
+					Render2D.PopClip();
+				}
+			}
+		}
+		
+		Render2D.End();
+		ImGui.EndFrame();
+		_activeRender = false;
+	}
+	
+	/// <inheritdoc />
+	public override void Deinitialize()
+	{
+		// Unbind update events
+		Scripting.LateUpdate -= OnLateUpdate;
+		MainRenderTask.Instance.PostRender -= OnPostRender;
+		LibraryLoader.InterceptLibraryLoad -= InterceptLibraryLoad;
+		
+		// Disable plugin
+		Enabled = false;
+		EnableDrawing = false;
+		EnableInput = false;
+		_activeFrame = false;
+		_activeRender = false;
+		Instance = null;
+		
+		// Release textures
+		if (_textures != null)
+		{
+			for (int i = 0; i < _textures.Length; i++)
+			{
+				if (_textures[i] != null && _textures[i].IsAllocated)
+				{
+					_textures[i].ReleaseGPU();
+					_textures[i] = null;
+				}
+			}
+		}
+		_textures = new GPUTexture[1];
+		_freeOffset = 0;
+		_endOffset = 0;
+		
+		// Destroy static contexts
+		ImGui.DestroyContext(_imGuiContext);
+		_imGuiContext = ImGuiContextPtr.Null;
+		
+#if INCLUDE_IMNODES
+		ImNodes.DestroyContext(_imNodesContext);
+		_imNodesContext = ImNodesContextPtr.Null;
+#endif
+#if INCLUDE_IMPLOT
+		ImPlot.DestroyContext(_imPlotContext);
+		_imPlotContext = ImPlotContextPtr.Null;
+#endif
+#if INCLUDE_IMWIDGETS
+		Hexa.NET.ImGui.Widgets.WidgetManager.Dispose();
+#endif
+		
+		base.Deinitialize();
+	}
+
+	/// <summary>
+	/// Handles loading of each native library per Hexa.NET.ImGui module.
+	/// </summary>
+	/// <param name="name">The name of the library.</param>
+	/// <param name="pointer">The native pointer to the library.</param>
+	/// <returns></returns>
+	private static bool InterceptLibraryLoad(string name, out IntPtr pointer)
+	{
+		pointer = IntPtr.Zero;
+		string path = "";
+		if (Engine.IsEditor)
+		{
+			// Editor path
+			path = Path.Combine(Globals.ProjectFolder, "Plugins", "FlexaImGui", "Content", "runtimes");
+			if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+			{
+				if (RuntimeInformation.OSArchitecture == Architecture.Arm64)
+					path = Path.Combine(path, "linux-arm64", "native", $"{name}.so");
+				else
+					path = Path.Combine(path, "linux-x64", "native", $"{name}.so");
+			}
+			if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+			{
+				switch (RuntimeInformation.OSArchitecture)
+				{
+					case Architecture.Arm64:
+						path = Path.Combine(path, "win-arm64", "native", $"{name}.dll");
+						break;
+					case Architecture.X86:
+						path = Path.Combine(path, "win-x86", "native", $"{name}.dll");
+						break;
+					default:
+						path = Path.Combine(path, "win-x64", "native", $"{name}.dll");
+						break;
+				}
+			}
+			if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+			{
+				if (RuntimeInformation.OSArchitecture == Architecture.Arm64)
+					path = Path.Combine(path, "osx-arm64", "native", $"{name}.dylib");
+				else
+					path = Path.Combine(path, "osx-x64", "native", $"{name}.dylib");
+			}
+		}
+
+		if (NativeLibrary.TryLoad(path, out IntPtr nativePointer))
+		{
+			pointer = nativePointer;
+			return true;
+		}
+
+		return false;
+	}
+	
+	/// <summary>
+	/// Dynamic texture update method.
+	/// </summary>
+	/// <param name="arg0">The passed GPUContext.</param>
+	/// <param name="tex">The passed ImTextureData pointer for the dynamic texture.</param>
+	private unsafe void UpdateTexture(GPUContext arg0, ImTextureData* tex)
+	{
+		if (!EnableDrawing)
+			return;
+		
+		if (tex->Status == ImTextureStatus.WantCreate)
+		{
+			var texture = GPUDevice.Instance.CreateTexture((_textures.Length + 1).ToString());
+			var desc = GPUTextureDescription.New2D(tex->Width, tex->Height, 1,
+				PixelFormat.B8G8R8A8_UNorm, GPUTextureFlags.ShaderResource);
+
+			if (texture.Init(ref desc))
+			{
+				Debug.LogError("Failed to setup ImGui font atlas texture.");
+				return;
+			}
+			
+			var size = desc.Width * desc.Height * PixelFormatExtensions.SizeInBytes(desc.Format);
+			byte[] data = new byte[size];
+			
+			for(int i = 0; i < size; i++)
+				data[i] = tex->Pixels[i];
+			
+			fixed (byte* dataPtr = data)
+			{
+				uint rowPitch = (uint)size / (uint)desc.Height;
+				uint slicePitch = (uint)size;
+				
+				arg0.UpdateTexture(texture, 0, 0, new IntPtr(dataPtr), rowPitch, slicePitch);
+				texture.ResidentMipLevels = 1;
+			}
+			
+			tex->SetTexID(new ImTextureID(_freeOffset + 1));
+			
+			if (_freeOffset > _textures.Length - 1)
+				Array.Resize(ref _textures, _textures.Length * 2);
+			
+			_textures[_freeOffset] = texture;
+			tex->SetStatus(ImTextureStatus.Ok);
+			RefreshTextureArray();
+		}
+		if (tex->Status == ImTextureStatus.WantUpdates)
+		{
+			var updateRect = tex->UpdateRect;
+			var texture = _textures[tex->GetTexID() - 1];
+			
+			var desc = texture.Description;
+			var size = desc.Width * desc.Height * PixelFormatExtensions.SizeInBytes(desc.Format);
+			byte[] data = new byte[size];
+			
+			for(int i = 0; i < size; i++)
+				data[i] = tex->Pixels[i];
+			
+			fixed (byte* dataPtr = data)
+			{
+				uint rowPitch = (uint)size / (uint)desc.Height;
+				uint slicePitch = (uint)size;
+				
+				arg0.UpdateTexture(texture, 0, 0, new IntPtr(dataPtr), rowPitch, slicePitch);
+				texture.ResidentMipLevels = 1;
+			}
+			tex->SetStatus(ImTextureStatus.Ok);
+		}
+		if (tex->Status == ImTextureStatus.WantDestroy && tex->UnusedFrames > 0)
+		{
+			int id = (int)tex->TexID.Handle - 1;
+			_textures[id].ReleaseGPU();
+			tex->SetTexID(ImTextureID.Null);
+			tex->SetStatus(ImTextureStatus.Destroyed);
+			RefreshTextureArray();
+		}
+	}
+
+	/// <summary>
+	/// Refreshes the internal texture array.
+	/// </summary>
+	private void RefreshTextureArray()
+	{
+		_endOffset = _textures.Length;
+		for (int i = 0; i < _endOffset; i++)
+		{
+			if (_textures[i] == null || !_textures[i].IsAllocated)
+			{
+				_freeOffset = i;
+				return;
+			}
+		}
+		_freeOffset = _endOffset;
+	}
+	
+	/// <summary>
+	/// Calls NewFrame() for each Hexa.NET.ImGui module.
+	/// </summary>
+	public static void NewFrame()
+	{
+		if (!Instance.Enabled)
+		{
+			Instance._activeFrame = false;
 			return;
 		}
 		
 		// Begin frame
-		_activeFrame = true;
+		Instance._activeFrame = true;
 		ImGuiIOPtr io = ImGui.GetIO();
 		io.DeltaTime = Time.UnscaledDeltaTime;
 
@@ -211,7 +539,7 @@ public class FlexaImGui : GamePlugin
 		ImGuizmo.SetRect(0, 0, io.DisplaySize.X, io.DisplaySize.Y);
 #endif
 		
-		bool hasFocus = Engine.HasGameViewportFocus && EnableInput;
+		bool hasFocus = Engine.HasGameViewportFocus && Instance.EnableInput;
 		io.AddFocusEvent(hasFocus);
 		if (hasFocus)
 		{
@@ -390,298 +718,7 @@ public class FlexaImGui : GamePlugin
 			io.AddKeyAnalogEvent(ImGuiKey.GamepadL2, triggerLeft > deadZone * 0.5f, triggerLeft);
 			io.AddKeyAnalogEvent(ImGuiKey.GamepadR2, triggerRight > deadZone * 0.5f, triggerRight);
 		}
-	}
-
-	private void OnLateUpdate()
-	{
-		if (!_activeFrame)
-			return;
 		
-		// End frame
-		if (ImGuiP.GetCurrentWindowRead() == ImGuiWindowPtr.Null)
-			return;
-		
-#if INCLUDE_IMWIDGETS
-		Hexa.NET.ImGui.Widgets.WidgetManager.Draw();
-#endif
-		ImGui.Render();
-		_activeFrame = false;
-	}
-	
-	private unsafe void OnPostRender(GPUContext arg0, ref RenderContext context)
-	{
-		// Draw ImGui data into the output (via Render2D)
-		var drawData = ImGui.GetDrawData();
-		if (drawData.IsNull)
-			return;
-		
-		// Update textures
-		for (int i = 0; i < drawData.Textures.Size; i++)
-			if (!drawData.Textures[i].IsNull && drawData.Textures[i].Status != ImTextureStatus.Ok)
-				UpdateTexture(arg0, drawData.Textures[i]);
-
-		// Render command lists
-		var viewport = context.Task.OutputViewport;
-		Render2D.Begin(arg0, context.Task.OutputView, null, ref viewport);
-		
-		for (int cmdListIndex = 0; cmdListIndex < drawData.CmdListsCount; cmdListIndex++)
-		{
-			var cmdList = drawData.CmdLists[cmdListIndex];
-
-			// Resize internal arrays to fit buffers
-			if (cmdList.VtxBuffer.Size > _vertices.Length)
-			{
-				int newSize = NextPowerOf2(cmdList.VtxBuffer.Size);
-				_vertices = new Float2[newSize];
-				_uvs = new Float2[newSize];
-				_colors = new Color[newSize];
-			}
-			if (cmdList.IdxBuffer.Size > _indices.Length)
-			{
-				_indices = new ushort[NextPowerOf2(cmdList.IdxBuffer.Size)];
-			}
-			
-			// Convert vertex buffer
-			for (int i = 0; i < cmdList.VtxBuffer.Size; i++)
-			{
-				var v = cmdList.VtxBuffer.Data[i];
-				// Offset vertices for pixel alignment
-				_vertices[i] = new Float2(v.Pos.X + 0.5f, v.Pos.Y + 0.5f); 
-				_uvs[i] = new Float2(v.Uv.X, v.Uv.Y);
-				_colors[i] = new Color(
-					(byte)(v.Col & 0xFF),
-					(byte)((v.Col >> 8) & 0xFF),
-					(byte)((v.Col >> 16) & 0xFF),
-					(byte)((v.Col >> 24) & 0xFF));
-			}
-			
-			// Convert index buffer
-			for (int i = 0; i < cmdList.IdxBuffer.Size; i++)
-			{
-				_indices[i] = cmdList.IdxBuffer.Data[i];
-			}
-			
-			// Submit draw commands
-			for (int cmdIndex = 0; cmdIndex < cmdList.CmdBuffer.Size; cmdIndex++)
-			{
-				var cmd = cmdList.CmdBuffer[cmdIndex];
-				if (cmd.UserCallback != null)
-				{
-					delegate*<ImDrawList*, ImDrawCmd*, void> userCallback = 
-						(delegate*<ImDrawList*, ImDrawCmd*, void>)cmd.UserCallback;
-
-					userCallback(cmdList, &cmd);
-				}
-				else
-				{
-					// Perform scissors clipping
-					Float2 clipMin = new Float2(
-						(cmd.ClipRect.X - drawData.DisplayPos.X) * drawData.FramebufferScale.X, 
-						(cmd.ClipRect.Y - drawData.DisplayPos.Y) * drawData.FramebufferScale.Y);
-					Float2 clipMax = new Float2(
-						(cmd.ClipRect.Z - drawData.DisplayPos.X) * drawData.FramebufferScale.X, 
-						(cmd.ClipRect.W - drawData.DisplayPos.Y) * drawData.FramebufferScale.Y);
-					if (clipMax.X <= clipMin.X || clipMax.Y <= clipMin.Y)
-						continue;
-					
-					Rectangle scissor = new Rectangle(
-						clipMin.X, clipMin.Y, clipMax.X - clipMin.X, clipMax.Y - clipMin.Y);
-					Render2D.PushClip(scissor);
-					
-					// Draw textured indexed triangles list
-					int texId = (int)cmd.GetTexID().Handle - 1;
-					var tex = _textures[texId];
-					
-					Render2D.DrawTexturedTriangles(tex, 
-						new Span<ushort>(_indices, (int)cmd.IdxOffset, (int)cmd.ElemCount).ToArray(), 
-						new Span<Float2>(_vertices, (int)cmd.VtxOffset, _vertices.Length - (int)cmd.VtxOffset).ToArray(), 
-						new Span<Float2>(_uvs, (int)cmd.VtxOffset, _uvs.Length - (int)cmd.VtxOffset).ToArray(), 
-						new Span<Color>(_colors, (int)cmd.VtxOffset, _colors.Length - (int)cmd.VtxOffset).ToArray());
-					Render2D.PopClip();
-				}
-			}
-		}
-		
-		Render2D.End();
-		ImGui.EndFrame();
-	}
-	
-	/// <inheritdoc />
-	public override void Deinitialize()
-	{
-		LibraryLoader.InterceptLibraryLoad -= InterceptLibraryLoad;
-		
-		// Unbind update events
-		Scripting.Update -= OnUpdate;
-		Scripting.LateUpdate -= OnLateUpdate;
-		MainRenderTask.Instance.PostRender -= OnPostRender;
-		
-		// Shutdown
-#if INCLUDE_IMNODES 
-		ImNodes.DestroyContext(_imNodesContext);
-#endif
-#if INCLUDE_IMPLOT 
-		ImPlot.DestroyContext(_imPlotContext);
-#endif
-#if INCLUDE_IMWIDGETS
-		Hexa.NET.ImGui.Widgets.WidgetManager.Dispose();
-#endif
-		ImGui.DestroyContext(_imGuiContext);
-		
-		base.Deinitialize();
-	}
-
-	/// <summary>
-	/// Handles loading of each native library per Hexa.NET.ImGui module.
-	/// </summary>
-	/// <param name="name">The name of the library.</param>
-	/// <param name="pointer">The native pointer to the library.</param>
-	/// <returns></returns>
-	private static bool InterceptLibraryLoad(string name, out IntPtr pointer)
-	{
-		pointer = IntPtr.Zero;
-		string path = "";
-		if (Engine.IsEditor)
-		{
-			// Editor path
-			path = Path.Combine(Globals.ProjectFolder, "Plugins", "FlexaImGui", "Content", "runtimes");
-			if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
-			{
-				if (RuntimeInformation.OSArchitecture == Architecture.Arm64)
-					path = Path.Combine(path, "linux-arm64", "native", $"{name}.so");
-				else
-					path = Path.Combine(path, "linux-x64", "native", $"{name}.so");
-			}
-			if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-			{
-				switch (RuntimeInformation.OSArchitecture)
-				{
-					case Architecture.Arm64:
-						path = Path.Combine(path, "win-arm64", "native", $"{name}.dll");
-						break;
-					case Architecture.X86:
-						path = Path.Combine(path, "win-x86", "native", $"{name}.dll");
-						break;
-					default:
-						path = Path.Combine(path, "win-x64", "native", $"{name}.dll");
-						break;
-				}
-			}
-			if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
-			{
-				if (RuntimeInformation.OSArchitecture == Architecture.Arm64)
-					path = Path.Combine(path, "osx-arm64", "native", $"{name}.dylib");
-				else
-					path = Path.Combine(path, "osx-x64", "native", $"{name}.dylib");
-			}
-		}
-
-		if (NativeLibrary.TryLoad(path, out IntPtr nativePointer))
-		{
-			pointer = nativePointer;
-			return true;
-		}
-
-		return false;
-	}
-	
-	/// <summary>
-	/// Dynamic texture update method.
-	/// </summary>
-	/// <param name="arg0">The passed GPUContext.</param>
-	/// <param name="tex">The passed ImTextureData pointer for the dynamic texture.</param>
-	private unsafe void UpdateTexture(GPUContext arg0, ImTextureData* tex)
-	{
-		if (tex->Status == ImTextureStatus.WantCreate)
-		{
-			var texture = GPUDevice.Instance.CreateTexture((_textures.Length + 1).ToString());
-			var desc = GPUTextureDescription.New2D(tex->Width, tex->Height, 1,
-				PixelFormat.B8G8R8A8_UNorm, GPUTextureFlags.ShaderResource);
-
-			if (texture.Init(ref desc))
-			{
-				Debug.LogError("Failed to setup ImGui font atlas texture.");
-				return;
-			}
-			
-			var size = desc.Width * desc.Height * PixelFormatExtensions.SizeInBytes(desc.Format);
-			byte[] data = new byte[size];
-			
-			for(int i = 0; i < size; i++)
-				data[i] = tex->Pixels[i];
-			
-			fixed (byte* dataPtr = data)
-			{
-				uint rowPitch = (uint)size / (uint)desc.Height;
-				uint slicePitch = (uint)size;
-				
-				arg0.UpdateTexture(texture, 0, 0, new IntPtr(dataPtr), rowPitch, slicePitch);
-				texture.ResidentMipLevels = 1;
-			}
-			
-			tex->SetTexID(new ImTextureID(_freeOffset + 1));
-			
-			if (_freeOffset > _textures.Length - 1)
-				Array.Resize(ref _textures, _textures.Length * 2);
-			
-			_textures[_freeOffset] = texture;
-			tex->SetStatus(ImTextureStatus.Ok);
-			RefreshTextureArray();
-		}
-		if (tex->Status == ImTextureStatus.WantUpdates)
-		{
-			var updateRect = tex->UpdateRect;
-			var texture = _textures[tex->GetTexID() - 1];
-			
-			var desc = texture.Description;
-			var size = desc.Width * desc.Height * PixelFormatExtensions.SizeInBytes(desc.Format);
-			byte[] data = new byte[size];
-			
-			for(int i = 0; i < size; i++)
-				data[i] = tex->Pixels[i];
-			
-			fixed (byte* dataPtr = data)
-			{
-				uint rowPitch = (uint)size / (uint)desc.Height;
-				uint slicePitch = (uint)size;
-				
-				arg0.UpdateTexture(texture, 0, 0, new IntPtr(dataPtr), rowPitch, slicePitch);
-				texture.ResidentMipLevels = 1;
-			}
-			tex->SetStatus(ImTextureStatus.Ok);
-		}
-		if (tex->Status == ImTextureStatus.WantDestroy && tex->UnusedFrames > 0)
-		{
-			int id = (int)tex->TexID.Handle - 1;
-			_textures[id].ReleaseGPU();
-			tex->SetTexID(ImTextureID.Null);
-			tex->SetStatus(ImTextureStatus.Destroyed);
-			RefreshTextureArray();
-		}
-	}
-
-	/// <summary>
-	/// Refreshes the internal texture array.
-	/// </summary>
-	private void RefreshTextureArray()
-	{
-		_endOffset = _textures.Length;
-		for (int i = 0; i < _endOffset; i++)
-		{
-			if (_textures[i] == null || !_textures[i].IsAllocated)
-			{
-				_freeOffset = i;
-				return;
-			}
-		}
-		_freeOffset = _endOffset;
-	}
-	
-	/// <summary>
-	/// Calls NewFrame() for each Hexa.NET.ImGui module.
-	/// </summary>
-	public static void NewFrame()
-	{
 		ImGui.NewFrame();
 #if INCLUDE_IMGUIZMO
 		ImGuizmo.BeginFrame();
